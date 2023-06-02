@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, ol, li{
+    list-style: none;
+}
 
 :root{
     --text-font: 'Barlow', sans-serif;
@@ -106,3 +114,134 @@ header h1{
     background-color: var(--yellow);
 }
 
+.line-red{
+    background-color: var(--red);
+}
+
+.container{
+    height: 600px;
+    background-size: cover;
+}
+
+.container.graphic{
+    background-image: url(./images/mobile/image-graphic-design.jpg);
+}
+
+.container.photography{
+    background-image: url(./images/mobile/image-photography.jpg);
+}
+
+.container.graphic *{
+    color: var(--graphic-text);
+}
+
+.container.photography *{
+    color: var(--photography-text);
+}
+
+
+.container .description{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.testimonials{
+    display: grid;
+    place-items: center;
+}
+
+.testimonials-title{
+    font-family: var(--title-font);
+    font-size: 1.1rem;
+    color: var(--gray);
+    padding: 64px 0;
+    letter-spacing: 0.2rem;
+}
+
+.client{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    height: 400px;
+    text-align: center;
+}
+
+.client__avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+}
+
+
+.client__avatar:nth-child(1){
+    background-image: url(./images/image-emily.jpg);
+}
+
+.client__avatar.client2{
+    background-image: url(./images/image-thomas.jpg);
+}
+
+.client__avatar.client3{
+    background-image: url(./images/image-jennie.jpg);
+}
+
+.client__text{
+    font-size: 1.2rem;
+    font-weight: 600;
+    opacity: 0.7;
+    line-height: 2rem;
+    padding: 0px 16px;
+}
+
+.client__name{
+    font-family: var(--title-font);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.client__job{
+    color: var(--gray);
+    font-weight: 600;
+    padding: 16px;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.images img{
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 400px;
+    background-color: #90d4c5;
+    color: var(--footer);
+}
+
+footer h2{
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+
+footer nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    font-weight: 600;
+}
+
+footer>ul{
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
